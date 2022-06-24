@@ -15,9 +15,6 @@
 
 
 
-
-export {setValueChange, } 
-
 const num = 0;
 
 const today = new Date();
@@ -36,11 +33,11 @@ function setValueChange(){
     const cont = document.getElementById('n_cont').value;  
     
     const notice = [
-        {name:"num",value:num},
-        {name:"title",value:title},
-        {name:"writer",value:writer},
-        {name:"date",value:date},
-        {name:"count",value:count},
+        {name:"번호",value:num},
+        {name:"제목",value:title},
+        {name:"글쓴이",value:writer},
+        {name:"작성일",value:date},
+        {name:"조회수",value:count},
         {name:"cont",value:cont}
     ];
     
@@ -57,6 +54,14 @@ function setValueChange(){
     window.localStorage.setItem("password",password);
 
     /*객체형인 배열형태로 데이터를 저장하기 위해 JSON 사용*/
+}
+
+function getValue(i) {
+    setValueChange();
+    const noticeBack = JSON.parse(localStorage.getItem("notice"));
+    console.log(noticeBack[i].value);
+    document.write(noticeBack[i].value);
+    /*둘 중에 쓸 수 있나???*/
 }
 
 

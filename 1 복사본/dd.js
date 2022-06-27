@@ -27,4 +27,3 @@ if(storage.length > 0) {
 }
 
 const notice = window.localStorage.getItem("storage")
-const 

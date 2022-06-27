@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="boardWrap">
+        <div class="boardTitle">
+            <strong>공지사항</strong>
+            <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+        </div>
+        <div class="boardViewWrap">
+            <div class="boardView">
+                <div class="title">
+                    <span id="wtHere"></span>
+                </div>
+                <div class="info">
+                    <ul>
+                        <li>번호</li>
+                        <li>
+                            <script>getValue(0);</script>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>글쓴이</li>
+                        <li>
+                            <script>getValue(2);</script>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>작성일</li>
+                        <li>
+                            <script>getValue(3);</script>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>조회수</li>
+                        <li>
+                            <script>getValue(4);</script>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont">
+                    <script>getValue(5);</script>
+                </div>
+            </div>
+            <div class="btWrap">
+                <a href="list.html" class="on">목록</a>
+                <a href="edit.html">수정</a>
+            </div>
+        </div>
+    </div>
+    <script src="board.js"></script>
+</body>
+</html>

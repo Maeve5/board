@@ -1,0 +1,78 @@
+@media (max-width : 1000px) {
+    .boardWrap {
+        width: 100%;
+        min-width: 320px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }    
+    
+    .board_list .num,
+    .board_list .writer,
+    .board_list .count {
+        display: none;
+    }
+
+    .board_list .date {
+        width: 40%;
+    }
+
+    .board_list .title {
+        text-indent: 10px;
+    }
+
+    .board_list .top .title {
+        text-indent: 0;
+    }
+
+    .board_page a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .board_page a.bt {
+        padding-top: 7px;
+    }
+
+    .board_page a.num{
+        padding-top: 6px;
+    }
+
+    .boardView .info dl {
+        width: 50%;
+        padding: 0;
+    }
+
+    .boardView .info ul:nth-child(-n+2) {
+        margin-bottom: 5px;
+    }
+
+    .boardView .info ul::before {
+        display: none;
+    }
+
+    .boardView .info ul{
+        font-size: 1.2rem;
+    }
+
+    .boardWrite ul .li1 {
+        display: none;
+    }
+
+    .boardWrite ul .li2{
+        width: 100%;
+    }
+
+    .boardWrite input[type="text"],
+    .boardWrite input[type="password"],
+    .boardWrite .writeTitle input[type="text"] {
+        width: 100%;
+    }
+
+    .boardWrite .info ul {
+        width: 49%;
+    }
+
+    .boardWrite .info ul:first-child {
+        margin-right: 2%;
+    }
+}

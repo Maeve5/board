@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
     <link rel="stylesheet" href="css/css.css">
+    <script src="dd.js"></script>
+
 </head>
 
 <body>
@@ -21,7 +23,7 @@
                     <ul>
                         <li class="li1">제목</li>
                         <li class="li2">
-                            <input id="wTitle" type="text" placeholder="제목 입력" onChange="setValueChange(this)">
+                            <input id="wTitle" type="text" placeholder="제목 입력">
                         </li>
                     </li>
                 </div>
@@ -30,24 +32,24 @@
                         <li class="li1">글쓴이</li>
                         <li class="li2">
                             <span id="wwHere"></span>
-                            <input id="wWriter" type="text" placeholder="글쓴이 입력" onChange="setValueChange(this)">
+                            <input id="wWriter" type="text" placeholder="글쓴이 입력">
                         </li>
                     </ul>
                     <ul id="pwZone">
                         <li class="li1">비밀번호</li>
                         <li class="li2">
                             <span id="wpHere"></span>
-                            <input id="wPassword" type="password" placeholder="비밀번호 입력" onChange="setValueChange(this)">
+                            <input id="wPassword" type="password" placeholder="비밀번호 입력">
                         </li>
                     </ul>
                 </div>
                 <div class="cont">
                     <span id="wcHere"></span>
-                    <textarea id="nCont" placeholder="내용 입력" onChange="setValueChange(this)"></textarea>
+                    <textarea id="nCont" placeholder="내용 입력"></textarea>
                 </div>
             </div>
             <div class="btWrap">
-                <a href="view.html" id="submitButton" class="on">등록</a>
+                <a href="#" id="submitButton" class="on" onclick="setValueChange()">등록</a>
                 <a href="list.html" id="cancleButton">취소</a>
 
                 <!-- <input id="submitButton" class="on" type="button" value="등록" onclick="view.html">
@@ -55,7 +57,6 @@
             </div>
         </div>
     </div>
-    <script src="board.js"></script>
 </body>
 
 </html>

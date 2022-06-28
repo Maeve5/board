@@ -196,13 +196,12 @@ a {
     display: none;
 }
 
-.boardView .info ul li,
-.boardView .info ul dd {
+.boardView .info ul li {
     display: inline-block;
     font-size: 1.4rem;
 }
 
-.boardView .info ul dd {
+.boardView .info ul .li2 {
     margin-left: 10px;
     color: #777;
 }

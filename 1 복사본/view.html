@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
     <link rel="stylesheet" href="css/css.css">
+    <script src="dd.js"></script>
+    <script src="ddv.js"></script>
 </head>
+
 <body>
     <div class="boardWrap">
         <div class="boardTitle">
@@ -16,36 +20,36 @@
         <div class="boardViewWrap">
             <div class="boardView">
                 <div class="title">
-                    <span id="wtHere"></span>
+                    <span id="vTitle" onload="setValue()">글제목</span>
                 </div>
                 <div class="info">
                     <ul>
-                        <li>번호</li>
-                        <li>
-                            <script>getValue(0);</script>
+                        <li class="li1">번호</li>
+                        <li class="li2">
+                            <span id="vNum" onload="setValue()"></span>
                         </li>
                     </ul>
                     <ul>
-                        <li>글쓴이</li>
-                        <li>
-                            <script>getValue(2);</script>
+                        <li class="li1">글쓴이</li>
+                        <li class="li2">
+                            <span id="vWriter" onload="setValue()"></span>
                         </li>
                     </ul>
                     <ul>
-                        <li>작성일</li>
-                        <li>
-                            <script>getValue(3);</script>
+                        <li class="li1">작성일</li>
+                        <li class="li2">
+                            <span id="vDate" onload="setValue()"></span>
                         </li>
                     </ul>
                     <ul>
-                        <li>조회수</li>
-                        <li>
-                            <script>getValue(4);</script>
+                        <li class="li1">조회수</li>
+                        <li class="li2">
+                            <span id="vCount" onload="setValue()"></span>
                         </li>
                     </ul>
                 </div>
                 <div class="cont">
-                    <script>getValue(5);</script>
+                    <span id="vCont" onload="setValue()">내용</span>
                 </div>
             </div>
             <div class="btWrap">
@@ -54,6 +58,6 @@
             </div>
         </div>
     </div>
-    <script src="board.js"></script>
 </body>
+
 </html>

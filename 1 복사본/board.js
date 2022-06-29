@@ -25,7 +25,7 @@ function setValueChange(){
     let title = document.getElementById('wTitle').value;
     let writer = document.getElementById('wWriter').value;
     let password = document.getElementById('wPassword').value;
-    let cont = document.getElementById('nCont').value;  
+    let cont = document.getElementById('wCont').value;  
 
     let notice = {
         "번호":num,

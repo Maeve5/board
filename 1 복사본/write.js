@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded",
         let wPassword = document.querySelector("#wPassword")
         let pwZone = document.querySelector("#pwZone")
         let wcHere = document.querySelector("#wcHere")
-        let nCont = document.querySelector("#nCont")
+        let wCont = document.querySelector("#wCont")
 
         submitButton.addEventListener("click",
             function(e){
                 wtHere.textContent = wTitle.value
                 wwHere.textContent = wWriter.value
                 wpHere.textContent = wPassword.value
-                wcHere.textContent = nCont.value
+                wcHere.textContent = wCont.value
                 wTitle.style.display = "none"
                 wWriter.style.display = "none"
                 pwZone.style.display = "none"
-                nCont.style.display = "none"
+                wCont.style.display = "none"
                 submitButton.value = "수정"
                 
             }

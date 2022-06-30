@@ -25,7 +25,7 @@ const date = year + '.' + month + '.' + day;
 
 const count = 0;
 
-function setValueChange(){
+export function setValueChange(){
     
     let title = document.getElementById('n_title').value;
     let writer = document.getElementById('n_writer').value;

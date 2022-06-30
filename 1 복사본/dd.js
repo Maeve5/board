@@ -28,24 +28,25 @@
 
 
 
-// export 
+export default function setValueChange();
+
 function setValueChange(){
-
+    
     let num = 0;
-
+    
     const today = new Date();
     const year = today.getFullYear();
     const month = ('0' + (today.getMonth() + 1));
     const day = today.getDate();
     const date = year + '.' + month + '.' + day;
-
+    
     const count = 0;
 
     let title = document.getElementById('wTitle').value;
     let writer = document.getElementById('wWriter').value;
     let password = document.getElementById('wPassword').value;
     let cont = document.getElementById('wCont').value;
-
+    
     const storage = {
         Num:num,
         Title:title,
@@ -54,24 +55,8 @@ function setValueChange(){
         Count:count,
         Cont:cont
     };
-
+    
     localStorage.setItem("storage", JSON.stringify(storage));
-    const getStorage = JSON.parse(localStorage.getItem('storage'));
-    
-    let vNum = getStorage.Num;
-    let vTitle = getStorage.Title;
-    let vWriter = getStorage.Writer;
-    let vDate = getStorage.Date;
-    let vCount = getStorage.Count;
-    let vCont = getStorage.Cont;
-    
-    console.log(vNum);
-    console.log(vTitle);
-    console.log(vWriter);
-    console.log(vDate);
-    console.log(vCount);
-    console.log(vCont);
-    
 }
     
     // const numV = getStorage[Object.keys(getStorage)[0]];
